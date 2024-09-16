@@ -11,7 +11,7 @@ const App = () => {
     try {
       setLoading(true);
       setError(null);
-      const response = await axios.get('http://localhost:5000/api/jokes/random');
+      const response = await axios.get('https://random-joke-api-qp57.onrender.com/api/jokes/random');
       setJoke(response.data.joke);
     } catch (error) {
       setError('Failed to fetch joke');
